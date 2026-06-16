@@ -1,20 +1,26 @@
-#include<stdio.h>
-#include<conio.h>
-void main() {
-int n, i, j;
-printf("Enter a number: ");
-scanf("%i", &n);
+#include <stdio.h>
+#include <conio.h>
 
-for (i = 0; i < n; ++i) {
-for (j = 0; j < 2 * n - 1; ++j) {
-if (j >= i && j < 2 * n - 1 - i) {
-printf("* ");
-}
-else {
-printf("_ ");
-}
-}
-printf("\n");
-}
-getch();
+int main()
+{
+    int n, i, j;
+    printf("Enter a number: ");
+    scanf("%i", &n);
+
+    for (i = 0; i < n; ++i)
+    {
+        for (j = 0; j < 2 * n - 1; ++j)
+        {
+            if (j >= i && j < 2 * n - 1 - i)
+            {
+                printf("* ");
+            }
+            else
+            {
+                printf("_ ");
+            }
+        }
+        printf("\n");
+    }
+    return 0;
 }

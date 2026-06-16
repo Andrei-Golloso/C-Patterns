@@ -1,20 +1,21 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
 
-void main(){
-int i,j,n;
-clrscr();
+int main()
+{
+    int i, j, n;
 
-printf("Enter a number: ");
-scanf("%i",&n);
-for (i = 0; i < n; i++) {
-for (j = 0; j < n; j++) {
-if (i == j || j == (n - i - 1))
-printf("* ");
-else
-printf("_ ");
-}
-printf("\n");
-}
-getch();
+    printf("Enter a number: ");
+    scanf("%i", &n);
+    for (i = 0; i < n; i++)
+    {
+        for (j = 0; j < n; j++)
+        {
+            if (i == j || j == (n - i - 1))
+                printf("* ");
+            else
+                printf("_ ");
+        }
+        printf("\n");
+    }
+    return 0;
 }
